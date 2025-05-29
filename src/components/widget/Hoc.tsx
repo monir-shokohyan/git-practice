@@ -1,10 +1,12 @@
-import { ReactNode } from 'react'
+import React from 'react'
 
-const Hoc = (comp:ReactNode,comp2:ReactNode,whichone:boolean) => {
-    return function () {
+const Hoc = (Comp:React.ComponentType<{message:string}>) => {
+    return function getData (props: any ) {
+        const message:string =  'this is my message'
  
-return whichone ? comp : comp2
-    }
+      return <Comp {...props} message={message} /> 
+
+      }
 }
 
 export default Hoc

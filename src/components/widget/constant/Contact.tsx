@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({message}:{message:string}) => {
+
+  if(message){
+    return (
+      <h1>{message}</h1>
+    )
+  }
   return (
     <div>
-      Contact
+      Contact  : <span>{message}</span>
     </div>
   )
 }
