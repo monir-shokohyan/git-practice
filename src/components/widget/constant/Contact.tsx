@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Contact = ({message}:{message:string}) => {
+console.log('working');
 
   if(message){
     return (
