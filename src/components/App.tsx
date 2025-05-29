@@ -3,7 +3,7 @@ import Hoc from "./widget/Hoc"
 
 function App() {
   const Mycomp = Hoc(Contact)
-  console.log("rendering from git now")
+  console.log("rendering from git now11")
   
   return (
     <>
